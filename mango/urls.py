@@ -21,4 +21,6 @@ import mangos.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mangos.views.home, name='home'),
+    path('mangos/', mangos.views.mangos, name='mangos'),
+    path('countries/', mangos.views.countries, name='countries'),
 ]

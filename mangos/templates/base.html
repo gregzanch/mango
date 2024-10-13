@@ -1,11 +1,24 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Base</title>
+    <link rel="stylesheet" href="{% static 'pico.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    {% block styles %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    Hello {{name}}!
+    <header>
+        <a href="/">Home</a>
+        <span>|</span>
+        <a href="/mangos">Mangos</a>
+        <span>|</span>
+        <a href="/countries">Countries</a>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 </body>
 </html>

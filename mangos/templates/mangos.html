@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Mangos{% endblock %}
+
+{% block content %}
+<h1>Current Mangos</h1>
+<ul>
+    {% for mango in mangos %}
+        <li>{{ mango.name }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

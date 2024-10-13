@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Countries{% endblock %}
+
+{% block content %}
+<h1>Current Countries</h1>
+<ul>
+    {% for country in countries %}
+        <li>{{ country.name }} ( {{ country.abbreviation }} )</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

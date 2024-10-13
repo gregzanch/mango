@@ -90,3 +90,25 @@ Enter a desired username, email, and password.
 
 Next, add the two models to our `admin.py` file, and run the server again using `python3 manage.py runserver`.
 Navigate to http://localhost:8000/admin/ and log in. Here we can add users and countries and mangos!
+
+## Step 5 - Expanding our user interface (Templates / Views)
+
+To flesh out our user interface, we're going to have to add some templates and views
+Refer to the [template docs](https://docs.djangoproject.com/en/5.1/topics/templates/) from Django for more information.
+
+### Static files
+
+To serve static files (e.g. `.css`, `.svg`) we're going to create a `static` directory.
+In this directory we put all of our `.css` files and other images.
+
+### Templates
+
+The templates allow us to create a user interface in `html` in a modular way.
+`base.html` will contain shared content between pages, such as the header.
+The other template `html` files are specific to each page.
+In this step, we add a `home`, `mangos`, and `countries` page,
+
+### URLs => Views
+
+Our url configuration allows us to run a function (block of code) when a user navigates to that specific url.
+Each url item in `urls.py` maps to a single function declared in `views.py`
