@@ -81,3 +81,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 <QuerySet [<Country: India - IN>]>
 ```
 
+## Step 4 - Admin
+
+### Create a superuser admin account
+
+To create an admin superuser, run `python3 manage.py createsuperuser`.
+Enter a desired username, email, and password.
+
+Next, add the two models to our `admin.py` file, and run the server again using `python3 manage.py runserver`.
+Navigate to http://localhost:8000/admin/ and log in. Here we can add users and countries and mangos!
