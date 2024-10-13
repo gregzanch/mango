@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import mangos.views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', mangos.views.home, name='home'),
 ]
