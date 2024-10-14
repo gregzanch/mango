@@ -19,6 +19,14 @@ header > span {
 }
 
 main {
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 16em;
+    margin-right: 16em;
+    min-width: 512px;
+}
+
+.inline-flex-between {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }

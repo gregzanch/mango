@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mangos.views.home, name='home'),
     path('mangos/', mangos.views.mangos, name='mangos'),
+    path('mangos/new/', mangos.views.new_mango, name='new_mango'),
     path('countries/', mangos.views.countries, name='countries'),
+    path('countries/new/', mangos.views.new_country, name='new_country'),
 ]

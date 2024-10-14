@@ -112,3 +112,7 @@ In this step, we add a `home`, `mangos`, and `countries` page,
 
 Our url configuration allows us to run a function (block of code) when a user navigates to that specific url.
 Each url item in `urls.py` maps to a single function declared in `views.py`
+
+## Step 6 - Forms
+
+Instead of using our admin portal to create new mangos and countries, let's make one ourselves!

@@ -3,7 +3,10 @@
 {% block title %}Mangos{% endblock %}
 
 {% block content %}
-<h1>Current Mangos</h1>
+<div class="inline-flex-between">
+    <h1>Current Mangos</h1>
+    <a role="button" href="/mangos/new">+ New</a>
+</div>
 <ul>
     {% for mango in mangos %}
         <li>{{ mango.name }}</li>

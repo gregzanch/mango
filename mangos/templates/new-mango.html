@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Add Mango{% endblock %}
+
+{% block content %}
+<div class="inline-flex-between">
+    <h1>Add a new mango</h1>
+    <a role="button" href="/mangos">← Back</a>
+</div>
+
+<form method="post">
+    {% csrf_token %}
+    <label for="name">Name</label>
+    <input id="name" type="text" />
+    <label for="country">Country</label>
+    <select id="country">
+        {% for country in countries %}
+            <option value="{{country.id}}">{{country.name}} - {{country.abbreviation}}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
